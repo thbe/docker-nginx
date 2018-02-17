@@ -29,8 +29,11 @@ RUN apk add --no-cache nginx
 # Copy configuration files
 COPY root /
 
+# Prepare NGINX start
+RUN chmod 755 /srv/run.sh
+
 # Expose NGINX standard http(s) ports
 EXPOSE 80/tcp 443/tcp
 
 # Start NGINX
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+CMD ["/srv/run.sh"]
