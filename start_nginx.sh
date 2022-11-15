@@ -12,7 +12,7 @@
 
 ### Set standard password if not set with local environment variable ###
 if [ -n "${NGINX_PASSWORD}" ]; then
-  NGINX_PASSWORD=password
+  NGINX_PASSWORD=nginx
 fi
 
 ### Run docker instance ###

@@ -4,9 +4,9 @@
 
 This is a Docker image to run a NGINX instance.
 
-This Docker image is based on the offical [Alpine](https://hub.docker.com/r/_/alpine/) image.
+This Docker image is based on the official [Alpine](https://hub.docker.com/r/_/alpine/) image.
 
-#### Table of Contents
+***Table of Contents***
 
 - [Install Docker](https://github.com/thbe/docker-nginx#install-docker)
 - [Download](https://github.com/thbe/docker-nginx#download)
@@ -26,7 +26,7 @@ To use this image you have to [install Docker](https://docs.docker.com/engine/in
 
 You can get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/thbe/nginx/):
 
-```
+```shell
 docker pull thbe/nginx
 ```
 
@@ -52,7 +52,7 @@ If this environment variable is set, the scripts inside the container will run i
 The instance can be started by the [start script](https://raw.githubusercontent.com/thbe/docker-nginx/master/start_nginx.sh)
 from GitHub:
 
-```
+```shell
 wget https://raw.githubusercontent.com/thbe/docker-nginx/master/start_nginx.sh
 export NGINX_PASSWORD='SeCre!1'
 chmod 755 start_nginx.sh
@@ -63,7 +63,7 @@ chmod 755 start_nginx.sh
 
 You can use the standard Docker commands to examine the status of the NGINX instance:
 
-```
+```shell
 docker logs --tail 1000 --follow --timestamps nginx
 ```
 
@@ -81,7 +81,7 @@ section.
 
 Simply download the trusted build from the [Docker Hub registry](https://hub.docker.com/r/thbe/nginx/):
 
-```
+```shell
 docker pull thbe/nginx
 ```
 
@@ -92,7 +92,7 @@ docker pull thbe/nginx
 You can build the image also from source. To do this you have to clone the
 [docker-nginx](https://github.com/thbe/docker-nginx) repository from GitHub:
 
-```
+```shell
 git clone https://github.com/thbe/docker-nginx.git
 cd docker-nginx
 docker build --rm --no-cache -t thbe/nginx .
@@ -102,7 +102,7 @@ docker build --rm --no-cache -t thbe/nginx .
 
 If you need a shell inside the container you can run the following command:
 
-```
+```shell
 docker exec -ti nginx /bin/sh
 ```
 

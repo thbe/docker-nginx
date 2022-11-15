@@ -30,7 +30,7 @@ RUN apk add --no-cache nginx
 COPY root /
 
 # Prepare NGINX start
-RUN chmod 755 /srv/run.sh
+RUN chmod 755 /srv/nginx/run.sh
 
 # Expose NGINX standard http(s) ports
 EXPOSE 80/tcp 443/tcp

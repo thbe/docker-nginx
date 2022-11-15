@@ -43,7 +43,7 @@ if [ ! -f /.dockerenv ]; then RETURN=1; REASON="Not executed inside a Docker con
 
 ### Copy NGINX docker env variable to script ###
 if [ -z ${NGINX_ENV_PASSWORD} ]; then
-  NGINX_PASSWORD="pass"
+  NGINX_PASSWORD="nginx"
 else
   NGINX_PASSWORD=${NGINX_ENV_PASSWORD}
 fi
