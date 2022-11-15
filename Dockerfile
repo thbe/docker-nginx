@@ -36,4 +36,4 @@ RUN chmod 755 /srv/nginx/run.sh
 EXPOSE 80/tcp 443/tcp
 
 # Start NGINX
-CMD ["/srv/run.sh"]
+CMD ["/srv/nginx/run.sh"]
