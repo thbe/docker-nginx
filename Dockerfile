@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 #
 # BUILD:
 #   wget https://raw.githubusercontent.com/thbe/docker-nginx/master/Dockerfile
@@ -12,8 +12,8 @@ FROM alpine
 #
 
 # Set metadata
-LABEL maintainer="Thomas Bendler <project@bendler-net.de>"
-LABEL version="1.0"
+LABEL maintainer="Thomas Bendler <code@thbe.org>"
+LABEL version="1.2"
 LABEL description="Creates an Alpine container serving a NGINX instance"
 
 # Set environment

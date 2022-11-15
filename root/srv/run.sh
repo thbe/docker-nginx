@@ -2,8 +2,8 @@
 #
 # Set root password and start NGINX instance
 #
-# Author:       Thomas Bendler <project@bendler-net.de>
-# Date:         Sat Feb 17 21:35:23 CET 2018
+# Author:       Thomas Bendler <code@thbe.org>
+# Date:         Tue Nov 15 22:12:56 CET 2022
 #
 # Release:      v1.0
 #
