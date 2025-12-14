@@ -11,7 +11,7 @@
 #
 
 ### Set standard password if not set with local environment variable ###
-if [ -n "${NGINX_PASSWORD}" ]; then
+if [ -z "${NGINX_PASSWORD}" ]; then
   NGINX_PASSWORD=nginx
 fi
 
