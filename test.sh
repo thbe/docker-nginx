@@ -1,7 +1,7 @@
 #!/bin/sh
 # Smoke test: build, start, wait for HTTP http://localhost:18080/, check no restart/crash. Usage: ./test.sh
 set -eu
-IMG=thbe/nginxest; C=t-nginx; trap 'docker rm -f $C >/dev/null 2>&1' EXIT
+IMG=thbe/nginx:test; C=t-nginx; trap 'docker rm -f $C >/dev/null 2>&1' EXIT
 docker build -q --pull --load -t "$IMG" "$(dirname "$0")" >/dev/null
 docker run -d --name $C -p 18080:80 "$IMG" >/dev/null
 for i in $(seq 1 60); do
