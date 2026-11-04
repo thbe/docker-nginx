@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM alpine:3.21
+FROM alpine:3.24
 #
 # BUILD:
 #   docker build --rm --no-cache -t thbe/nginx .
